@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
+    static const name = 'home_screen'; 
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter + Material 3'),
@@ -59,7 +63,7 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       trailing: Icon(Icons.arrow_forward_ios_outlined, color: colors.primary),
-      
+
       onTap: () {
 
         // Navigator.of(context).push(
@@ -68,6 +72,7 @@ class _CustomListTile extends StatelessWidget {
         //   ),
         // );
         // Navigator.pushNamed(context, menuItem.link);
+        // context.pushNamed(CardsScreen.name);
         context.push(menuItem.link);
         
       },
