@@ -33,5 +33,11 @@ class MenuItem {
       link: '/cards', 
       icon: Icons.credit_card
       ),
+    MenuItem(
+      title: 'Progress Indicatos', 
+      subTitle: 'Generales y controlados', 
+      link: '/progress', 
+      icon: Icons.refresh_outlined
+      ),
 
   ];
