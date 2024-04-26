@@ -14,6 +14,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp.router(
       routerConfig: appRouter,
+      title: 'Flutter Widgets',
       theme: AppTheme( selectedColor: 6).getTheme(),
       debugShowCheckedModeBanner: false,
 
