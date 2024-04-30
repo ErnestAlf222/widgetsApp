@@ -45,5 +45,11 @@ class MenuItem {
       link: '/snackbars', 
       icon: Icons.info_outline
       ),
+    MenuItem(
+      title: 'AnimatedContainer', 
+      subTitle: 'Animación del widget', 
+      link: '/animated', 
+      icon: Icons.animation_rounded
+      ),
 
   ];
