@@ -51,5 +51,11 @@ class MenuItem {
       link: '/animated', 
       icon: Icons.animation_rounded
       ),
+    MenuItem(
+      title: 'UI Controls', 
+      subTitle: 'Controles switches', 
+      link: '/ui-controls', 
+      icon: Icons.animation_rounded
+      ),
 
   ];

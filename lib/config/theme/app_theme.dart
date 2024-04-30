@@ -1,14 +1,15 @@
 
 import 'package:flutter/material.dart';
 
-const colorList =<Color>[
+final  colorList =<Color>[
   Colors.blue,
   Colors.tealAccent,
   Colors.yellowAccent,
   Colors.red,
   Colors.deepPurpleAccent,
   Colors.deepOrange,
-  Colors.pink
+  Colors.pink,
+  Colors.lightGreenAccent.shade400
 
 ];
 
