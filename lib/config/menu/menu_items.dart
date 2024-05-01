@@ -55,7 +55,14 @@ class MenuItem {
       title: 'UI Controls', 
       subTitle: 'Controles switches', 
       link: '/ui-controls', 
-      icon: Icons.animation_rounded
+      icon: Icons.control_point
       ),
+    MenuItem(
+      title: 'Tutorial', 
+      subTitle: 'Tutorial para el usuario final', 
+      link: '/tutorial', 
+      icon: Icons.person_3
+      ),
+   
 
   ];
