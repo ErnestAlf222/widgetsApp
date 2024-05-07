@@ -50,6 +50,8 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
 
     if (!isMounted) return;
     setState(() {});
+
+    moveScrollToBottom();
   }
 
   void addFiveImages() {
@@ -72,6 +74,17 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
     setState(() {});
   }
 
+  void moveScrollToBottom(){
+    
+    if (scrollController.position.pixels + 100 <= scrollController.position.maxScrollExtent) return;
+
+    scrollController.animateTo(
+      scrollController.position.pixels + 120,
+      duration: const Duration( milliseconds: 300),
+      curve: Curves.fastOutSlowIn,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,7 +97,6 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
           onRefresh: onRefresh,
           edgeOffset: 10,
           strokeWidth: 5,
-          
           child: ListView.builder(
             controller: scrollController,
             itemCount: imagesIds.length,
