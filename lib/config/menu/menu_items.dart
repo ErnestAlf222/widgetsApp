@@ -63,6 +63,12 @@ class MenuItem {
       link: '/tutorial', 
       icon: Icons.person_3
       ),
+    MenuItem(
+      title: 'Infinite Scroll', 
+      subTitle: 'Scroll infinito en la app', 
+      link: '/infinite', 
+      icon: Icons.perm_device_information_outlined
+      ),
    
 
   ];
