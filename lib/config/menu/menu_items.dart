@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart' show IconData, Icons;
 
 class MenuItem {
@@ -19,6 +17,12 @@ class MenuItem {
 }
 
   const appMenuItems = <MenuItem> [
+    MenuItem(
+      title: 'Counter', 
+      subTitle: 'Contador con riverpod', 
+      link: '/counter', 
+      icon: Icons.add
+      ),
 
     MenuItem(
       title: 'Botones', 
@@ -69,6 +73,13 @@ class MenuItem {
       link: '/infinite', 
       icon: Icons.perm_device_information_outlined
       ),
+    MenuItem(
+      title: 'Tema de la app', 
+      subTitle: 'Colores de la aplicación para cambiar', 
+      link: '/theme', 
+      icon: Icons.color_lens_outlined
+      ),
+    
    
 
   ];
