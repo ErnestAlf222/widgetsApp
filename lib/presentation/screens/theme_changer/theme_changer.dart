@@ -37,6 +37,7 @@ class _ThemeChangedView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final List<Color> colors = ref.watch(colorListProvider);
+    final int selectedColor = ref.watch(selectedColorProvider);
 
     return ListView.builder(
       itemCount: colors.length,
@@ -50,9 +51,10 @@ class _ThemeChangedView extends ConsumerWidget {
           subtitle: Text('${color.value}'),
           activeColor: color,
           value: index,
-          groupValue: 0,
+          groupValue: selectedColor,
           onChanged: (value) {
-            // TODO: Notificar el cambio
+            // Cambia el valor de radioList cuando presiono en otras opciones
+            ref.read(selectedColorProvider.notifier).state = index;
           },
         );
       },
